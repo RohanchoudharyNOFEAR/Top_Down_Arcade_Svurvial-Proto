@@ -124,6 +124,7 @@ public class SaveLoadSystem : MonoBehaviour
     public  async void ResetData()
     {
         gameData = new GameData();
-       await SaveGame();
+        await SaveGame();
+        Application.Quit();
     }
 }
